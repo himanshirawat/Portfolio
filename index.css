@@ -39,7 +39,7 @@ section {
 .teams,
 .contact,
 footer {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .about .about-content,
 .services .serv-content,
@@ -105,11 +105,14 @@ section .title::after {
   font-weight: 600;
 }
 .navbar .logo a:hover {
-  color: rgb(0, 38, 255);
+  color: #9933ff;
 }
 .navbar .logo a span {
   color: #9933ff;
   transition: all 0.3s ease;
+}
+.navbar .logo a span:hover{
+  color: white;
 }
 .navbar.sticky .logo a span {
   color: #fff;
@@ -329,8 +332,28 @@ section .title::after {
 }
 .services .serv-content .card .text {
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 700;
   margin: 10px 0 7px 0;
+  color: #9933ff
+}
+.services .serv-content .card .text:hover{
+  color: white;
+}
+.services .serv-content .card a {
+    display: inline-block;
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    color: #fff;
+    font-size: 10px;
+    padding: 6px 20px;
+    margin-top: 10px;
+    font-weight: 300;
+    border-radius: 3px;
+    border: 2px solid linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    transition: all 0.3s ease;
+}
+.services .serv-content .card a:hover {
+  color: black;
+  background: white;
 }
 
 /* skills section styling */
@@ -454,8 +477,24 @@ section .title::after {
 }
 .projects .proj-content .card .text {
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 700;
   margin: 10px 0 7px 0;
+}
+.projects .proj-content .card a {
+  display: inline-block;
+  background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  transition: all 0.3s ease;
+}
+.projects .proj-content .card a:hover {
+color: black;
+background: white;
 }
 
 /* contact section styling */
@@ -519,7 +558,7 @@ section .title::after {
   outline: none;
   padding: 0 15px;
   font-size: 17px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
   transition: all 0.3s ease;
 }
 .contact .right form .field input:focus,
@@ -567,6 +606,10 @@ footer span a {
 }
 footer span a:hover {
   text-decoration: underline;
+}
+
+footer .icons{
+  font-size: larger;
 }
 
 /* responsive media query start */
