@@ -1,3 +1,5 @@
+
+
 $(document).ready(function () {
 
   // slide-up script
@@ -35,3 +37,15 @@ $(document).ready(function () {
     loop: true,
   });
 });
+
+// Email Section
+function SendMail() { 
+  var params = {
+    from_name: document.getElementById("fullName").value,
+    email_id: document.getElementById("email_id").value,
+    message: document.getElementById("message").value
+  }
+  emailjs.send("service_n8mva3a","template_ch5lrq9",params).then(function (res) {
+    alert("Thank You !");
+  })
+}

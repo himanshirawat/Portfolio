@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Roboto&family=Wix+Madefor+Text&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -39,7 +41,7 @@ section {
 .teams,
 .contact,
 footer {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .about .about-content,
 .services .serv-content,
@@ -58,7 +60,7 @@ section .title {
   font-weight: 500;
   margin-bottom: 60px;
   padding-bottom: 20px;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 section .title::before {
   content: "";
@@ -87,7 +89,7 @@ section .title::after {
   width: 100%;
   z-index: 999;
   padding: 30px 0;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Roboto', sans-serif;
   transition: all 0.3s ease;
 }
 .navbar.sticky {
@@ -193,13 +195,14 @@ section .title::after {
 /* home section styling */
 .home {
   display: flex;
-  background: #000033;
+  background: rgb(2,0,36);
+  background: linear-gradient(18deg, rgba(2,0,36,1) 44%, rgba(9,9,121,1) 84%);
   height: 100vh;
   color: #fff;
   min-height: 500px;
   background-size: cover;
   background-attachment: fixed;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .home .max-width {
   width: 100%;
@@ -418,14 +421,20 @@ section .title::after {
 .skills-content .right .html::before {
   width: 90%;
 }
-.skills-content .right .css::before {
-  width: 60%;
-}
 .skills-content .right .js::before {
-  width: 65%;
+  width: 70%;
 }
 .skills-content .right .cpp::before {
   width: 75%;
+}
+.skills-content .right .node::before {
+  width: 70%;
+}
+.skills-content .right .react::before {
+  width: 75%;
+}
+.skills-content .right .git::before {
+  width: 80%;
 }
 .skills-content .right .MongoDB::before {
   width: 70%;
@@ -558,7 +567,7 @@ background: white;
   outline: none;
   padding: 0 15px;
   font-size: 17px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   transition: all 0.3s ease;
 }
 .contact .right form .field input:focus,
