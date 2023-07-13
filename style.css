@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #6a11cb;
+    --dark-gray: #6B7280;
+    --secondary-color:  #DC2626;
+    --off-white: #F3F4F6;
+    --link-hover: #2575fc;
+}
+
+.navbar{
+    background: linear-gradient(18deg, rgba(2,0,36,1) 44%, rgba(9,9,121,1) 84%);
+}
+
+hr {
+    margin: 2rem 0rem
+}
+
+.margin {
+    padding-bottom: 1rem;
+}
+
+.margin-md {
+    padding: 1rem;
+
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+}
+.container {
+    padding: 0rem 1rem
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+}
+
+.link {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+}
+
+.link-primary {
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.link-primary:hover {
+    background-color: var(--link-hover);
+}
+
+.link-secondary {
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+}
+
+.list-non-bullet {
+    list-style: none;
+}
+
+.hero {
+    padding: 2rem;
+    padding-top: 7rem;
+}
+
+.hero .hero-img {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.hero .hero-heading {
+    text-align: center;
+    color: var(--dark-gray)
+}
+
+
+.section {
+    padding: 2rem;
+}
+
+.section h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.ow {
+    background-color: var(--off-white)
+}

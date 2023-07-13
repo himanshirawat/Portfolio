@@ -505,6 +505,23 @@ section .title::after {
 color: black;
 background: white;
 }
+.projects .view{
+  display: inline-block;
+  background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  margin-top: 20px;
+  margin-left: 45%;
+  border-radius: 6px;
+  border: 2px solid linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  transition: all 0.3s ease;
+}
+.projects .view:hover {
+color: black;
+background: white;
+}
 
 /* contact section styling */
 .contact .title::after {
