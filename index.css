@@ -337,11 +337,9 @@ section .title::after {
   font-size: 25px;
   font-weight: 700;
   margin: 10px 0 7px 0;
-  color: #9933ff
+  color: #fff
 }
-.services .serv-content .card .text:hover{
-  color: white;
-}
+
 .services .serv-content .card a {
     display: inline-block;
     background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
@@ -391,8 +389,16 @@ section .title::after {
   color: #9933ff;
   background: none;
 }
+
+.skills .skills-content .right{
+  background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  padding: 10px;
+}
+
 .skills .skills-content .right .bars {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+  background: #ffffff;
+  padding: 8px;
 }
 .skills .skills-content .right .info {
   display: flex;
@@ -405,7 +411,7 @@ section .title::after {
   font-size: 18px;
 }
 .skills .skills-content .right .line {
-  height: 5px;
+  height: 7px;
   width: 100%;
   background: lightgrey;
   position: relative;
@@ -611,7 +617,7 @@ background: white;
   cursor: pointer;
   flex-wrap: nowrap;
   background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
-  border: 2px solid linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  border: 2px solid white;
   transition: all 0.3s ease;
 }
 .right form .button-area button:hover {

@@ -24,14 +24,14 @@ $(document).ready(function () {
   // Typing animation
 
   var typed = new Typed(".typing", {
-    strings: ["Student", "Full Stack Web Developer", "UI/UX Designer", "Programmer"],
+    strings: ["Full Stack Web Developer", "UI/UX Designer", "Programmer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
   });
 
   var typed = new Typed(".typing-2", {
-    strings: ["Student", "Full Stack Web Developer", "UI/UX Designer", "Programmer"],
+    strings: ["Full Stack Web Developer", "UI/UX Designer", "Programmer"],
     typeSpeed: 99,
     backSpeed: 58,
     loop: true,
