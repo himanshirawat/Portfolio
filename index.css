@@ -28,6 +28,7 @@ html {
 /* all similar content styling codes */
 section {
   padding: 100px 0;
+  overflow-x: hidden;
 }
 .max-width {
   max-width: 1300px;
@@ -777,3 +778,40 @@ footer .icons{
     line-height: 38px;
   }
 }
+
+section .animate {
+  transition: 1s;
+}
+
+.about .animate {
+  transform: translateX(-150%);
+}
+
+.about.show-animate .animate{
+  transform: translateX(0);
+}
+
+.services .animate {
+  transform: scale(.4);
+}
+
+.services.show-animate .animate{
+  transform: scale(1);
+}
+
+.projects .animate {
+  transform: translateX(150%);
+}
+
+.projects.show-animate .animate{
+  transform: translateX(0);
+}
+
+.skills .animate {
+  transform: scale(.7);
+}
+
+.skills.show-animate .animate{
+  transform: scale(1);
+}
+
