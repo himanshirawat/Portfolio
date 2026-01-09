@@ -1,54 +1,63 @@
+// Theme Toggle
+function toggleTheme() {
+  document.body.classList.toggle("light");
+  localStorage.setItem(
+    "theme",
+    document.body.classList.contains("light") ? "light" : "dark"
+  );
+}
 
+// Persist Theme
+if (localStorage.getItem("theme") === "light") {
+  document.body.classList.add("light");
+}
 
-$(document).ready(function () {
+// Timeline Animation
+const timelineItems = document.querySelectorAll(".timeline-item");
 
-  // slide-up script
-  $(".scroll-up-btn").click(function () {
-    $("html").animate({ scrollTop: 0 });
-    // removing smooth scroll on slide-up button click
-    $("html").css("scrollBehavior", "auto");
-  });
+const observer = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  },
+  { threshold: 0.2 }
+);
 
-  $(".navbar .menu li a").click(function () {
-    // applying again smooth scroll on menu items click
-    $("html").css("scrollBehavior", "smooth");
-  });
+timelineItems.forEach(item => observer.observe(item));
 
-  // toggle menu/navbar script
-  $(".menu-btn").click(function () {
-    $(".navbar .menu").toggleClass("active");
-    $(".menu-btn i").toggleClass("active");
-  });
-
-  
-  // Typing animation
-
-  var typed = new Typed(".typing", {
-    strings: ["Full Stack Web Developer", "UI/UX Designer", "Programmer"],
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true,
-  });
-
-  var typed = new Typed(".typing-2", {
-    strings: ["Full Stack Web Developer", "UI/UX Designer", "Programmer"],
-    typeSpeed: 99,
-    backSpeed: 58,
-    loop: true,
-  });
-});
 
 // Email Section
-function SendMail() { 
-  var params = {
+function sendMail(e) {
+  e.preventDefault();
+
+  const status = document.getElementById("form-status");
+
+  const params = {
     from_name: document.getElementById("fullName").value,
     email_id: document.getElementById("email_id").value,
-    message: document.getElementById("message").value
-  }
-  emailjs.send("service_n8mva3a","template_ch5lrq9",params).then(function (res) {
-    alert("Thank You !");
-  })
+    message: document.getElementById("message").value,
+  };
+
+  status.innerText = "Sending message...";
+
+  emailjs
+    .send("service_n8mva3a", "template_ch5lrq9", params)
+    .then(() => {
+      status.innerText = "Thanks! Your message has been sent.";
+      status.style.color = "green";
+      document.querySelector(".contact-form").reset();
+    })
+    .catch((error) => {
+      console.error("EmailJS Error:", error);
+      status.innerText = "Failed to send message. Please try again.";
+      status.style.color = "red";
+    });
 }
+
+
 
 let sections = document.querySelectorAll('section');
 
@@ -68,3 +77,20 @@ window.onscroll = () => {
     }
   })
 }
+
+
+const navMenu = document.querySelector(".nav nav");
+const navLinks = document.querySelectorAll(".nav nav a");
+
+function toggleMenu() {
+  navMenu.classList.toggle("open");
+}
+
+// Close menu when clicking any link (mobile)
+navLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("open");
+  });
+});
+
+

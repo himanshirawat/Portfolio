@@ -1,283 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./index.css"/>
-    <link rel="stylesheet" href="./style.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-
-   
-    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("cW6_iMmI2C90u26eZ");
-        })();
-    </script>
-</head>
-
-<body>
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo">
-                <a href="./index.html">Port<span>folio</span></a>
-            </div>
-
-            <ul class="menu">
-                <li><a href="./index.html" class="menu-btn">HOME</a></li>
-                <li><a href="#project" class="menu-btn">PROJECTS</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <header class="hero project">
-        <h1 class="hero-heading">See my<span style="color: var(--primary-color)"> projects</span></h1>
+    <title>Projects | Himanshika Rawat</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="container nav">
+        <span class="logo">Himanshika</span>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact" class="btn">Contact</a>
+          <button
+            class="theme-btn"
+            onclick="toggleTheme()"
+            aria-label="Toggle theme"
+          >
+            <svg class="icon-sun" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="5"></circle>
+              <g>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </g>
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24">
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+            </svg>
+          </button>
+        </nav>
+      </div>
     </header>
 
-    <ul class="list-non-bullet ow">
-        <li class="margin-md">
-            <div class="container container-center">
-                <h1>Quizify</h1>
-                <h4>Do you want to play and learn together let's play Quizify</h4>
-                <small>Currently Working on</small>
-                <p>A GUI app built with <strong>React JS,</strong> which you can use to play and learn together and score points as a score card.
-                </p>
-                <div class="margin">
-                    <a class="link link-primary" href="#" target="_blank">Go to
-                        app</a>
-                </div>
-                <!-- <br> -->
-                <div class="margin">
-                    <a class="link link-primary" href="https://github.com/himanshirawat/Quiz"
-                        target="_blank">View
-                        source
-                        on GitHub</a>
-                </div>
+    <!-- PROJECTS -->
+    <section id="projects" class="sectiontwo">
+      <div class="container">
+        <h2>Projects & Professional Growth</h2>
+        <p class="section-subtitle">
+          A year-wise view of my work showcasing technical growth, increasing
+          ownership, and product complexity.
+        </p>
+
+        <!-- ===================== -->
+        <!-- 2025 -->
+        <!-- ===================== -->
+        <h3 class="year-heading">2025 · SaaS, Enterprise & Client Products</h3>
+        <p class="year-desc">
+          Focused on scalable SaaS platforms, enterprise systems, and end-to-end
+          ownership of production-grade applications.
+        </p>
+
+        <div class="projects-grid">
+          <div class="project-card no-image">
+            <span class="project-badge">SaaS Platform</span>
+            <h3>GoSolar</h3>
+            <span class="project-meta">Digital 360 · Team Lead</span>
+
+            <p class="project-desc">
+              Role-based SaaS admin platform managing solar sales, surveys,
+              operations, SLA tracking, and analytics across distributed teams.
+            </p>
+
+            <div class="project-details">
+              <span
+                ><strong>Tech:</strong> Next.js, Firebase, RBAC, Charts</span
+              >
+              <span
+                ><strong>Focus:</strong> Architecture, scalability,
+                leadership</span
+              >
             </div>
-        </li>
-    </ul>
 
-    <ul class="list-non-bullet">
-        <li class="margin-md">
-            <div class="container container-center">
-                <h1>Day Tracker</h1>
-                <small>March, 2023</small>
-                <p>A Browser-extension with <strong>VanillaJS & Bootstrap</strong> a UI/UX design to track your goals and task 
-                    have live weather information of your location with daily updated Quotes.
-                </p>
-                <div class="margin">
-                    <a class="link link-primary" href="https://day-tracker-eight.vercel.app/" target="_blank">Go to
-                        app</a>
-                </div>
-                <!-- <br> -->
-                <div class="margin">
-                    <a class="link link-primary" href="https://github.com/himanshirawat/browser-extension"
-                        target="_blank">View
-                        source
-                        on GitHub</a>
-                </div>
-            </div>
-        </li>
-    </ul>
-
-    <ul class="list-non-bullet ow">
-        <li class="margin-md">
-            <div class="container container-center">
-                <h1>Notes App</h1>
-                <small>February, 2023</small>
-                <p>A note taking app with <strong>VanillaJS,</strong>, where you can add a quiz or long
-                     notes and store it forever with functionalities like pin, unpin and archive.
-                </p>
-                <div class="margin">
-                    <a class="link link-primary" href="#" target="_blank">Go to
-                        app</a>
-                </div>
-                <!-- <br> -->
-                <div class="margin">
-                    <a class="link link-primary" href="https://github.com/himanshirawat/Notes-app/"
-                        target="_blank">View
-                        source
-                        on GitHub</a>
-                </div>
-            </div>
-        </li>
-    </ul>
-
-    <ul class="list-non-bullet">
-        <li class="margin-md">
-            <div class="container container-center">
-                <h1>Coffee&Cookies</h1>
-                <small>January, 2023</small>
-                <p>A static UI/UX design page built with <strong>HTML-CSS-Bootstrap</strong> a coffee shop site 
-                    reprsenting themselves as a cafe and cookies shop.
-                </p>
-                <div class="margin">
-                    <a class="link link-primary" href="https://coffeeandcookies.onrender.com/" target="_blank">Go to app</a>
-                </div>
-                <!-- <br> -->
-                <div class="margin">
-                    <a class="link link-primary" href="https://github.com/himanshirawat/CoffeeandCookies"
-                        target="_blank">View source
-                        on GitHub</a>
-                </div>
-            </div>
-        </li>
-    </ul>
-
-    <ul class="list-non-bullet ow">
-        <li class="margin-md">
-            <div class="container container-center">
-                <h1>Shopy</h1>
-                <small>January, 2023</small>
-                <p>A GUI app built with <strong>Vanillas JS,</strong> to perform online shopping.
-                </p>
-                <div class="margin">
-                    <a class="link link-primary" href="https://shop-ecom.netlify.app/" target="_blank">Go to
-                        app</a>
-                </div>
-                <!-- <br> -->
-                <div class="margin">
-                    <a class="link link-primary" href="https://github.com/himanshirawat/shopy"
-                        target="_blank">View
-                        source
-                        on GitHub</a>
-                </div>
-            </div>
-        </li>
-    </ul>
-
-    <ul class="list-non-bullet">
-        <li class="margin-md">
-            <div class="container container-center">
-                <h1>Form Validation using reg ex</h1>
-                <small>December, 2022</small>
-                <p>A GUI app built with <strong>Vanillas JS,</strong> to create a user form with robust validation, implemented validation for fields.
-                </p>
-                <div class="margin">
-                    <a class="link link-primary" href="https://credential.netlify.app/" target="_blank">Go to
-                        app</a>
-                </div>
-                <!-- <br> -->
-                <div class="margin">
-                    <a class="link link-primary" href="https://github.com/himanshirawat/FormValidation"
-                        target="_blank">View
-                        source
-                        on GitHub</a>
-                </div>
-            </div>
-        </li>
-    </ul>
-
-    <ul class="list-non-bullet ow">
-        <li class="margin-md">
-            <div class="container container-center">
-                <h1>Wish IT List IT</h1>
-                <small>December, 2022</small>
-                <p>A GUI app built with <strong>Vanillas JS,</strong> you can use this app to make a wishlist 
-                    or bucket list and update it with the status of the list.
-                </p>
-                <div class="margin">
-                    <a class="link link-primary" href="https://wishlistit.netlify.app/" target="_blank">Go to
-                        app</a>
-                </div>
-                <!-- <br> -->
-                <div class="margin">
-                    <a class="link link-primary" href="https://github.com/himanshirawat/Wishlist-app"
-                        target="_blank">View
-                        source
-                        on GitHub</a>
-                </div>
-            </div>
-        </li>
-    </ul>
-
-    <ul class="list-non-bullet ">
-        <li class="margin-md">
-            <div class="container container-center">
-                <h1>Ristorante Con Fusion</h1>
-                <small>September, 2022</small>
-                <p>A static application of Restaurant built with <strong>Bootstrap,</strong> where you can book the 
-                    tables for your meals and also check the restaurant virtually.
-                </p>
-                <div class="margin">
-                    <a class="link link-primary" href="https://hotelwebsite-499d.onrender.com/" target="_blank">Go to app</a>
-                </div>
-                <!-- <br> -->
-                <div class="margin">
-                    <a class="link link-primary" href="https://github.com/himanshirawat/Restaurants-site"
-                        target="_blank">View source
-                        on GitHub</a>
-                </div>
-            </div>
-        </li>
-    </ul>
-
-    <!-- <ul class="list-non-bullet">
-        <li class="margin-md">
-            <div class="container container-center">
-                <h1>Emoji Interpreter</h1>
-                <small>September 19, 2021</small>
-                <p>A GUI app built with <stron>ReactJS,</stron> this app can show the meaning of emoji's you didn't know
-                </p>
-                <div class="margin">
-                    <a class="link link-primary" href="https://q3o83.csb.app/" target="_blank">Go to app</a>
-                </div>
-                <br>
-                <div class="margin">
-                    <a class="link link-primary" href="https://github.com/prakashsakari/emoji-interpreter"
-                        target="_blank">View source
-                        on GitHub</a>
-                </div>
-            </div>
-        </li>
-    </ul> -->
-
-
-    <footer>
-        <div class="icons">
-            <a href="https://github.com/himanshirawat" target="_blank" rel="noreferrer"><i
-                    class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/himanshi-rawat/" target="_blank" rel="noreferrer"><i
-                    class="fa-brands fa-linkedin"></i></a>
-            <a href="https://in.pinterest.com/himanshikarawat/" target="_blank" rel="noreferrer"><i class="fa-brands fa-pinterest"></i>
+            <a
+              href="https://www.gosol.in/en"
+              target="_blank"
+              class="project-link"
+            >
+              View Live →
             </a>
+          </div>
+
+          <div class="project-card no-image">
+            <span class="project-badge">Enterprise Platform</span>
+            <h3>Survey Arc</h3>
+            <span class="project-meta">AppInfoLogic</span>
+
+            <p class="project-desc">
+              Enterprise-grade survey and ticket management system designed for
+              structured data collection, workflows, and client operations.
+            </p>
+
+            <div class="project-details">
+              <span><strong>Tech:</strong> Next.js, FastAPI, PostgreSQL</span>
+              <span><strong>Focus:</strong> Data modeling, workflows</span>
+            </div>
+
+            <a
+              href="https://surveyarc-docker.vercel.app/"
+              target="_blank"
+              class="project-link"
+            >
+              View Live →
+            </a>
+          </div>
+
+          <div class="project-card no-image">
+            <span class="project-badge">Client Product</span>
+            <h3>KURI</h3>
+            <span class="project-meta">Freelancing · E-commerce</span>
+
+            <p class="project-desc">
+              Full-scale e-commerce platform with integrated payments, logistics
+              tracking, and WhatsApp-based customer engagement.
+            </p>
+
+            <div class="project-details">
+              <span
+                ><strong>Tech:</strong> Next.js, Firebase, Razorpay, APIs</span
+              >
+              <span><strong>Focus:</strong> Business logic, integrations</span>
+            </div>
+
+            <a
+              href="http://kuricares.com/"
+              target="_blank"
+              class="project-link"
+            >
+              View Live →
+            </a>
+          </div>
+
+          <div class="project-card no-image">
+            <span class="project-badge">Research Platform</span>
+            <h3>TehriHills</h3>
+            <span class="project-meta">Freelancing</span>
+
+            <p class="project-desc">
+              Market research platform with admin dashboard, job postings,
+              resume management, and content publishing workflows.
+            </p>
+
+            <div class="project-details">
+              <span><strong>Tech:</strong> Next.js, Firebase</span>
+              <span><strong>Focus:</strong> CMS, admin tooling</span>
+            </div>
+
+            <a
+              href="https://www.tehrihills.com/"
+              target="_blank"
+              class="project-link"
+            >
+              View Live →
+            </a>
+          </div>
         </div>
-        <span>Created By <a href="#">Himanshika Rawat</a> |
-            <span class="far fa-copyright"></span> 2023 All rights reserved.</span>
+
+        <!-- ===================== -->
+        <!-- 2024 -->
+        <!-- ===================== -->
+        <h3 class="year-heading">2024 · Multi-Product Client Platforms</h3>
+        <p class="year-desc">
+          Delivered multiple client-facing platforms at Digital 360, handling UI
+          architecture, workflows, and production delivery.
+        </p>
+
+        <div class="projects-grid">
+          <div class="project-card no-image">
+            <span class="project-badge">Admissions Platform</span>
+            <h3>Boarding Admission</h3>
+            <span class="project-meta">Digital 360</span>
+
+            <p class="project-desc">
+              School boarding admission platform with enquiry workflows, admin
+              dashboards, and student data management.
+            </p>
+
+            <div class="project-details">
+              <span><strong>Tech:</strong> Next.js, Firebase</span>
+              <span><strong>Focus:</strong> Forms, workflows</span>
+            </div>
+
+            <a
+              href="https://www.boardingadmissions.com/"
+              target="_blank"
+              class="project-link"
+            >
+              View Live →
+            </a>
+          </div>
+
+          <div class="project-card no-image">
+            <span class="project-badge">EdTech Platform</span>
+            <h3>AppInfoLogic Test Series</h3>
+            <span class="project-meta">Appinfologic</span>
+
+            <p class="project-desc">
+              Web-based test series platform enabling secure assessments,
+              role-based access, payments, and controlled test workflows for
+              students and admins.
+            </p>
+
+            <div class="project-details">
+              <span>
+                <strong>Tech:</strong> Next.js, Firebase, Payment Gateway
+              </span>
+              <span>
+                <strong>Focus:</strong> RBAC, Authentication, Secure workflows
+              </span>
+            </div>
+
+            <!-- Add live link here if available -->
+
+            <a
+              href="https://www.appinfologic.in/"
+              target="_blank"
+              class="project-link"
+            >
+              View Live →
+            </a>
+          </div>
+
+          <div class="project-card no-image">
+            <span class="project-badge">Education Platform</span>
+            <h3>Edu123</h3>
+            <span class="project-meta">Digital 360</span>
+
+            <p class="project-desc">
+              Education-focused platform with structured content delivery, admin
+              control panels, and scalable UI architecture.
+            </p>
+
+            <div class="project-details">
+              <span><strong>Tech:</strong> React, APIs</span>
+              <span><strong>Focus:</strong> UI scalability</span>
+            </div>
+
+            <a
+              href="https://www.edu123.in/"
+              target="_blank"
+              class="project-link"
+            >
+              View Live →
+            </a>
+          </div>
+
+          <div class="project-card no-image">
+            <span class="project-badge">Client Platform</span>
+            <h3>Saadhivyah</h3>
+            <span class="project-meta">Digital 360</span>
+
+            <p class="project-desc">
+              Client-centric platform with custom workflows, admin management,
+              and performance-focused UI delivery.
+            </p>
+
+            <div class="project-details">
+              <span><strong>Tech:</strong> React, Firebase</span>
+              <span><strong>Focus:</strong> Client workflows</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===================== -->
+        <!-- 2023 -->
+        <!-- ===================== -->
+        <h3 class="year-heading">2023 · Full-Stack Foundations</h3>
+        <p class="year-desc">
+          Built strong frontend foundations with emphasis on performance, SEO,
+          and scalable UI patterns.
+        </p>
+
+        <div class="projects-grid">
+          <div class="project-card no-image">
+            <span class="project-badge">Education Platform</span>
+            <h3>Eduminatti</h3>
+            <span class="project-meta">Digital 360</span>
+
+            <p class="project-desc">
+              School discovery and comparison platform with SEO-friendly
+              structure, dynamic profiles, and enquiry workflows.
+            </p>
+
+            <div class="project-details">
+              <span><strong>Tech:</strong> Next.js, SEO Optimization</span>
+              <span><strong>Focus:</strong> UI, performance</span>
+            </div>
+
+            <a
+              href="http://eduminatti.com/"
+              target="_blank"
+              class="project-link"
+            >
+              View Live →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      © 2026 Himanshika Rawat · Senior Software Engineer
     </footer>
 
-
-
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
