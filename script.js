@@ -128,7 +128,7 @@ function addMessage(text, sender) {
 
 document.addEventListener("DOMContentLoaded", () => {
   addMessage(
-    "Hi 👋 I'm Himanshika’s AI Assistant. You can ask me about her skills, projects, experience, or achievements.",
+    "Hi I'm Himanshika’s AI Assistant. You can ask me about her skills, projects, experience, or achievements.",
     "bot"
   );
 });
