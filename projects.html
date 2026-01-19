@@ -61,6 +61,31 @@
 
         <div class="projects-grid">
           <div class="project-card no-image">
+            <span class="project-badge">AI Assistant</span>
+            <h3>Portfolio AI Assistant</h3>
+            <span class="project-meta">Personal Project · Full Stack</span>
+
+            <p class="project-desc">
+              Custom-built AI assistant integrated into my portfolio to answer
+              questions about my skills, projects, experience, and background in
+              real time.
+            </p>
+
+            <div class="project-details">
+              <span>
+                <strong>Tech:</strong> HTML, CSS, JavaScript, Node.js, Groq API
+              </span>
+              <span>
+                <strong>Focus:</strong> Prompt engineering, UX, API integration
+              </span>
+            </div>
+
+            <span class="project-meta">
+              Click AI button at bottom-right to interact
+            </span>
+          </div>
+
+          <div class="project-card no-image">
             <span class="project-badge">SaaS Platform</span>
             <h3>GoSolar</h3>
             <span class="project-meta">Digital 360 · Team Lead</span>
@@ -142,7 +167,7 @@
           <div class="project-card no-image">
             <span class="project-badge">Research Platform</span>
             <h3>TehriHills</h3>
-            <span class="project-meta">Freelancing</span>
+            <span class="project-meta">AppInfoLogic · Freelancing</span>
 
             <p class="project-desc">
               Market research platform with admin dashboard, job postings,
@@ -311,6 +336,26 @@
     <footer class="footer">
       © 2026 Himanshika Rawat · Senior Software Engineer
     </footer>
+
+    <button id="ai-toggle" aria-label="Open AI Assistant">
+      <img src="favicon.ico" alt="AI" />
+      <span>Ask My AI</span>
+    </button>
+    <!-- AI Chat Box -->
+    <div id="ai-chat">
+      <div class="ai-header">
+        <span>AI Portfolio Assistant</span>
+        <button id="ai-close">✖</button>
+      </div>
+
+      <div id="ai-messages"></div>
+
+      <div class="ai-input">
+        <input type="text" id="ai-input" placeholder="Ask about my work..." />
+        <button id="ai-send">Send</button>
+      </div>
+      <div class="ai-footer">⚡ Powered by Groq</div>
+    </div>
 
     <script src="script.js"></script>
   </body>
